@@ -5,7 +5,7 @@ Export AD Users as single vcf file
 
 #>
 
-cls
+Clear-Host
 
 $filename = "C:\Scripts\vCards\abook.vcf"
 
@@ -22,7 +22,7 @@ $mobile = $_.MobilePhone
 $sede = $_.physicalDeliveryOfficeName
 $ufficio = $_.Department
 $qualifica = $_.title
-$responsabile = ($_.manager -split ',*..=')[1]
+#$responsabile = ($_.manager -split ',*..=')[1]
 
 if ($phone -or $email -or $mobile){
     write-host $user
