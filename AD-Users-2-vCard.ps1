@@ -7,7 +7,7 @@ Export AD Users as single vcf file
 
 Clear-Host
 
-$filename = "C:\vCards\abook.vcf"
+$filename = "C:\abook.vcf"
 
 remove-item $filename
 
